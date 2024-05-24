@@ -1,0 +1,17 @@
+.button {
+  padding: 0.5rem 2rem;
+  border: none;
+  background-color: black;
+  color: white;
+  margin: 8px auto;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s; /* Add transition for smooth animation */
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}

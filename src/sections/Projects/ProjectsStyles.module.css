@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  img {
+    max-width: 400px;
+    align-self: center;
+    background-color: var(--project-card-bg);
+    border-radius: 20px;
+    transition: .2s all;
+    margin: .5rem;
+  }
+
+  img:hover{
+    transform: scale(1.1);
+  }
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    color: #222;
+    transition: transform 200ms ease-in-out;
+  }
+
+  a:hover {
+    transform: scale(1.05);
+    cursor: alias;
+  }
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(
+    1,
+    1fr
+  ); /* Display one column on small screens */
+  gap: 30px;
+  justify-items: center; /* Center the project cards horizontally */
+}
+
+@media (min-width: 800px) {
+  .projectsContainer {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Display two columns on larger screens */
+  }
+}
