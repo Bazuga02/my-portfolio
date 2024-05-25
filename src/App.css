@@ -106,3 +106,13 @@ p {
     }
   }
 }
+
+:root {
+  --border-color: black; /* Set the default value for light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --border-color: white; /* Set the value for dark mode */
+  }
+}

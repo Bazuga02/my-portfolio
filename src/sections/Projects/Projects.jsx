@@ -15,28 +15,28 @@ function Projects() {
           link="https://famous-chebakia-076ce5.netlify.app/"
           h3="GYM-me"
           p="GYM Website"
-          github = "https://github.com/Bazuga02/gym-me-final"
+          github="https://github.com/Bazuga02/gym-me-final"
         />
         <ProjectCard
           src={proj2}
-          link="https://github.com/Ade-mir/company-landing-page-2"
+          link="https://github.com/Bazuga02/logoX-app"
           h3="LOGO-X"
           p="Logo Making Application"
-          github = "https://github.com/Bazuga02/logoX-app"
+          github="https://github.com/Bazuga02/logoX-app"
         />
         <ProjectCard
           src={proj4}
           link="https://gym-me-app.netlify.app/"
           h3="Gemini Clone"
           p="Goggle Gemini Clone Using api"
-          github = "https://github.com/Bazuga02/goggle-gemini-clone"
+          github="https://github.com/Bazuga02/goggle-gemini-clone"
         />
         <ProjectCard
           src={proj3}
           link="https://bazuga02.github.io/git-detective/"
           h3="GitHub Detective"
           p="GitHub UserProfile Search"
-          github = "https://github.com/Bazuga02/git-detective"
+          github="https://github.com/Bazuga02/git-detective"
         />
       </div>
     </section>
