@@ -3,12 +3,18 @@ import proj1 from "../../assets/proj1.png";
 import proj2 from "../../assets/proj2.png";
 import proj3 from "../../assets/proj3.png";
 import proj4 from "../../assets/proj4.png";
+import proj5 from "../../assets/proj5.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Projects</h1>
+      <h1 className="sectionTitle">
+        Projects
+        <span>
+          <p>Click on images to get redirected to website!</p>
+        </span>{" "}
+      </h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={proj1}
@@ -37,6 +43,13 @@ function Projects() {
           h3="GitHub Detective"
           p="GitHub UserProfile Search"
           github="https://github.com/Bazuga02/git-detective"
+        />
+        <ProjectCard
+          src={proj5}
+          link="https://666b9e0a1733a4f1ad4db51c--endearing-kheer-9262e2.netlify.app/"
+          h3="Task Manager"
+          p="Task Management System"
+          github="https://github.com/Bazuga02/mernback"
         />
       </div>
     </section>
