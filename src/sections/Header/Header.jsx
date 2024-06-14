@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./HeaderStyles.module.css";
+import animation from "../../animation.json";
+import animation2 from "../../animation2.json";
+import Lottie from "lottie-react";
 
 const Header = () => {
   const scrollToSection = (sectionId) => {
@@ -12,7 +15,15 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${styles.light}`}>
       <nav className={styles.navbar}>
-        <h1 className={`${styles.logo} ${styles.black}`}>Portfolio</h1>
+        <div className={styles.big}>
+          <div className={styles.animate}>
+            <Lottie animationData={animation2} loop={true} />
+          </div>
+          <h1 className={`${styles.logo} ${styles.black}`}>Portfolio</h1>
+          <div className={styles.animate}>
+            <Lottie animationData={animation} loop={true} />
+          </div>
+        </div>
         <ul className={styles.navLinks}>
           <li
             onClick={() => scrollToSection("hero")}
@@ -30,7 +41,7 @@ const Header = () => {
             onClick={() => scrollToSection("education")}
             className={`${styles.list} ${styles.listItem}`}
           >
-            Education 
+            Education
           </li>
           <li
             onClick={() => scrollToSection("skills")}

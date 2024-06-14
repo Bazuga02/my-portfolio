@@ -14,7 +14,6 @@ import { useTheme } from "../../common/ThemeContext";
 function Hero() {
   const { theme, toggleTheme } = useTheme();
   const themeIcon = theme === "light" ? sun : moon;
-  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
 
@@ -45,9 +44,7 @@ function Hero() {
           <a href="https://www.linkedin.com/in/abhishek-rai02/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
-          <a href="https://twitter.com/Abhishek1802180" target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
-          </a>
+
         </span>
         <p className={styles.description}>
           With a passion for developing modern React web apps for commercial

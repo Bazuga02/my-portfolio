@@ -13,9 +13,9 @@
 .logo {
   margin-bottom: 2rem;
   margin-top: 1rem;
- font-family: cursive;
- font-weight: bolder;
- text-decoration: underline dotted black 2px ;
+  font-family: cursive;
+  font-weight: bolder;
+  /* text-decoration: underline dotted black 2px ; */
 }
 
 .navLinks {
@@ -110,4 +110,17 @@
     font-size: 0.8rem;
     padding: 0.2rem 0.8rem;
   }
+}
+
+.animate {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  margin: auto; /* Optional: Center the animation horizontally */
+}
+
+.big {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem; /* Add some space between the logo and the animation */
 }
