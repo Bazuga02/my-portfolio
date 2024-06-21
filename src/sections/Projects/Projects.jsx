@@ -4,6 +4,7 @@ import proj2 from "../../assets/proj2.png";
 import proj3 from "../../assets/proj3.png";
 import proj4 from "../../assets/proj4.png";
 import proj5 from "../../assets/proj5.png";
+import proj6 from "../../assets/proj6.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -50,6 +51,13 @@ function Projects() {
           h3="Task Manager"
           p="Task Management System"
           github="https://github.com/Bazuga02/mernback"
+        />
+        <ProjectCard
+          src={proj6}
+          link="https://6675aec6813260b681471245--cheerful-crisp-1efc76.netlify.app/"
+          h3="Book Heaven"
+          p="Book Store App with Admin Panel"
+          github="https://github.com/Bazuga02/bookstore"
         />
       </div>
     </section>
