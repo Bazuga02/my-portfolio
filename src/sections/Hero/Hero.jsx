@@ -19,24 +19,24 @@ function Hero() {
 
   return (
     <section id="hero" className={`${styles.container} ${styles[theme]}`}>
-      <div className={styles.colorModeContainer}>
+      <div className="flex flex-col items-end">
         <img
-          src={heroImg}
-          className={styles.hero}
-          alt="Profile picture of Harris Johnsen"
-        />
-        <img
-          className={styles.colorMode}
+          className=" h-8 cursor-pointer m-1"
           src={themeIcon}
           alt="Color mode icon"
           onClick={toggleTheme}
         />
+        <img
+          src={heroImg}
+          className=" h-60  mr-10 lg:h-96"
+          alt="Profile picture of Harris Johnsen"
+        />
       </div>
-      <div className={styles.info}>
-        <h1>
+      <div>
+        <h1 className="text-4xl mb-4">
           Abhishek <br /> Rai
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2 className=" text-xl">Frontend Developer</h2>
         <span>
           <a href="https://github.com/Bazuga02" target="_blank">
             <img src={githubIcon} alt="Github icon" />
@@ -44,14 +44,13 @@ function Hero() {
           <a href="https://www.linkedin.com/in/abhishek-rai02/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
-
         </span>
-        <p className={styles.description}>
+        <p className=" lg:w-72 mb-4">
           With a passion for developing modern React web apps for commercial
           businesses.
         </p>
         <a href={CV} download>
-          <button className="hover">Resume</button>
+          <button className="hover mb-1 ">Resume</button>
         </a>
       </div>
     </section>

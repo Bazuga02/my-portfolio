@@ -26,7 +26,7 @@ function Contact() {
 
   return (
     <section id="contact" className={styles.container}>
-      <h1 className="sectionTitle">
+      <h1 className=" text-3xl">
         Contact
         <p>Get in touch!</p>
       </h1>
@@ -65,6 +65,7 @@ function Contact() {
             Message
           </label>
           <textarea
+          className=" p-2"
             name="message"
             id="message"
             placeholder="Message"

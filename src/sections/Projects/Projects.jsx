@@ -10,10 +10,10 @@ import ProjectCard from "../../common/ProjectCard";
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">
+      <h1 className=" text-3xl mb-2">
         Projects
         <span>
-          <p>Click on images to get redirected to website!</p>
+          <p className=" text-xl">Click on images to get redirected to website!</p>
         </span>{" "}
       </h1>
       <div className={styles.projectsContainer}>

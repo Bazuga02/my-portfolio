@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <section className="col" id="education">
       <header className="title">
-        <h2>EDUCATION</h2>
+        <h2 className=" text-2xl font-bold">EDUCATION</h2>
       </header>
       <div className="contents">
         <div className="box">

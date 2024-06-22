@@ -1,8 +1,5 @@
 import React from "react";
 import styles from "./HeaderStyles.module.css";
-import animation from "../../animation.json";
-import animation2 from "../../animation2.json";
-import Lottie from "lottie-react";
 
 const Header = () => {
   const scrollToSection = (sectionId) => {
@@ -13,45 +10,37 @@ const Header = () => {
   };
 
   return (
-    <header className={`${styles.header} ${styles.light}`}>
+    <header className={`${styles.header} ${styles.light} `}>
+    <h1 className=" lg:block hidden  text-2xl" >Portfolio</h1>
       <nav className={styles.navbar}>
-        <div className={styles.big}>
-          <div className={styles.animate}>
-            <Lottie animationData={animation2} loop={true} />
-          </div>
-          <h1 className={`${styles.logo} ${styles.black}`}>Portfolio</h1>
-          <div className={styles.animate}>
-            <Lottie animationData={animation} loop={true} />
-          </div>
-        </div>
-        <ul className={styles.navLinks}>
+        <ul className=" flex   bg-blue-500 rounded-md p-3 lg:px-30 lg:flex-row flex-col w-80  justify-between lg:w-[50vw] gap-4  m-3 ">
           <li
             onClick={() => scrollToSection("hero")}
-            className={`${styles.list} ${styles.listItem}`}
+            className= " font-semibold cursor-pointer border-r p-1  px-1 lg:px-10 hover:scale-105 duration-150 transition-all   "
           >
             About
           </li>
           <li
             onClick={() => scrollToSection("projects")}
-            className={`${styles.list} ${styles.listItem}`}
+            className= " font-semibold cursor-pointer border-r p-1 px-1 lg:px-10 hover:scale-105 duration-150 transition-all"
           >
             Projects
           </li>
           <li
             onClick={() => scrollToSection("education")}
-            className={`${styles.list} ${styles.listItem}`}
+            className= " font-semibold cursor-pointer border-r p-1  px-1 lg:px-10 hover:scale-105 duration-150 transition-all"
           >
             Education
           </li>
           <li
             onClick={() => scrollToSection("skills")}
-            className={`${styles.list} ${styles.listItem}`}
+            className= " font-semibold cursor-pointer border-r p-1 px-1 lg:px-10 hover:scale-105 duration-150 transition-all"
           >
             Skills
           </li>
           <li
             onClick={() => scrollToSection("contact")}
-            className={`${styles.list} ${styles.listItem}`}
+            className= " font-semibold cursor-pointer p-1 px-1 lg:px-10 hover:scale-105 duration-150 transition-all"
           >
             Contact
           </li>
