@@ -5,6 +5,8 @@ import proj3 from "../../assets/proj3.png";
 import proj4 from "../../assets/proj4.png";
 import proj5 from "../../assets/proj5.png";
 import proj6 from "../../assets/proj6.png";
+import proj7 from "../../assets/proj7.png";
+import proj8 from "../../assets/proj8.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -13,7 +15,9 @@ function Projects() {
       <h1 className=" text-3xl mb-2">
         Projects
         <span>
-          <p className=" text-xl">Click on images to get redirected to website!</p>
+          <p className=" text-xl">
+            Click on images to get redirected to website!
+          </p>
         </span>{" "}
       </h1>
       <div className={styles.projectsContainer}>
@@ -23,13 +27,6 @@ function Projects() {
           h3="GYM-me"
           p="GYM Website"
           github="https://github.com/Bazuga02/gym-me-final"
-        />
-        <ProjectCard
-          src={proj2}
-          link="https://github.com/Bazuga02/logoX-app"
-          h3="LOGO-X"
-          p="Logo Making Application"
-          github="https://github.com/Bazuga02/logoX-app"
         />
         <ProjectCard
           src={proj4}
@@ -58,6 +55,27 @@ function Projects() {
           h3="Book Heaven"
           p="Book Store App with Admin Panel"
           github="https://github.com/Bazuga02/bookstore"
+        />
+        <ProjectCard
+          src={proj7}
+          link="https://hrx-gym-abhishek.netlify.app/"
+          h3="Hrx-gym"
+          p="Gym website with amzing visuals"
+          github="https://github.com/Bazuga02/js-gymhttps://github.com/Bazuga02/bookstore"
+        />
+        <ProjectCard
+          src={proj8}
+          link="https://allo-meals.netlify.app/"
+          h3="Allo Meals"
+          p="Allo Meal ordering Website"
+          github="https://github.com/Bazuga02/allo-f"
+        />
+        <ProjectCard
+          src={proj2}
+          link="https://github.com/Bazuga02/logoX-app"
+          h3="LOGO-X"
+          p="Logo Making Application"
+          github="https://github.com/Bazuga02/logoX-app"
         />
       </div>
     </section>
