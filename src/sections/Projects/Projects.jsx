@@ -7,6 +7,7 @@ import proj5 from "../../assets/proj5.png";
 import proj6 from "../../assets/proj6.png";
 import proj7 from "../../assets/proj7.png";
 import proj8 from "../../assets/proj8.png";
+import proj9 from "../../assets/proj9.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -21,6 +22,20 @@ function Projects() {
         </span>{" "}
       </h1>
       <div className={styles.projectsContainer}>
+        <ProjectCard
+          src={proj9}
+          link="https://ai-room-redesign-iota.vercel.app/"
+          h3="Ai Room Redesign"
+          p="Redesign Your Room with the help of AI"
+          github="https://github.com/Bazuga02/ai-room-redesign"
+        />
+        <ProjectCard
+          src={proj6}
+          link="https://6675aec6813260b681471245--cheerful-crisp-1efc76.netlify.app/"
+          h3="Book Heaven"
+          p="Book Store App with Admin Panel"
+          github="https://github.com/Bazuga02/bookstore"
+        />
         <ProjectCard
           src={proj1}
           link="https://famous-chebakia-076ce5.netlify.app/"
@@ -48,13 +63,6 @@ function Projects() {
           h3="Task Manager"
           p="Task Management System"
           github="https://github.com/Bazuga02/mernback"
-        />
-        <ProjectCard
-          src={proj6}
-          link="https://6675aec6813260b681471245--cheerful-crisp-1efc76.netlify.app/"
-          h3="Book Heaven"
-          p="Book Store App with Admin Panel"
-          github="https://github.com/Bazuga02/bookstore"
         />
         <ProjectCard
           src={proj7}
